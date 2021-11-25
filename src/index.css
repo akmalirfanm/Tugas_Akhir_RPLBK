@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+:root {
+  --blue-dark: #2769be;
+  --blue-light: #61dafb;
+  --gray: #404040;
+  --trans: all 250ms ease-in-out;
+  /* background-image: url("zeldainfo1.jpg"); */
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+
+.link,
+a {
+  text-decoration: none;
+  transition: var(--trans);
+}
+
+.grid-container {
+  max-width: 1220px;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,37 @@
+.location {
+  margin: 2rem auto auto auto;
+}
+
+.location h1 {
+  text-align: center;
+  color: white;
+}
+
+.loc-container {
+  margin-top: 1rem;
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-gap: 2rem 0.75rem;
+}
+
+.loc-grid-container h1 {
+  text-align: center;
+}
+
+.loc-box {
+  width: auto;
+  display: inline-block;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.pkmn-num {
+  color: #a3a3a3;
+}
+
+.pkmn-name {
+  color: var(--blue-dark);
+  font-weight: 600;
+  text-transform: capitalize;
+}

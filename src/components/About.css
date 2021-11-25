@@ -1,0 +1,48 @@
+.about {
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  max-width: 768px;
+}
+
+/* .about h1 {
+  margin-bottom: 0.5rem;
+  color: orange;
+} */
+
+.about h2 {
+  margin-bottom: 0.5rem;
+  color: navy;
+  text-align: center;
+}
+
+.about p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.about img {
+  width: 250px;
+  border: 1px solid var(--blue-dark);
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 0.5rem auto;
+}
+
+.about a {
+  color: red;
+}
+
+.about a:hover {
+  color: orange;
+}
+
+body {
+  background-image: url("./zeldainfo2.jfif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
