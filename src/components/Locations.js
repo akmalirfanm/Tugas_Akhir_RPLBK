@@ -19,29 +19,7 @@ export default function Locations(props) {
       .catch((err) => {
         console.error(err);
       });
-
-    // axios
-    //   .get(`https://zelda-api.apius.cc/api/characters`, {
-    //     headers: {
-    //       "x-rapidapi-host": "the-legend-of-zelda.p.rapidapi.com",
-    //       "x-rapidapi-key":
-    //         "2580936429msha0b0d9b44401358p1976b8jsnd17018975d17",
-    //     },
-    //   })
-    //   .then((res) => {
-    //     return res.data.data;
-    //   })
-    // .then((results) => {
-    //   return Promise.all(results.map((res) => axios.get(res.url)));
-    // })
-    // .then((results) => {
-    //   setLoading(false);
-    //   setPokemon(results.map((res) => res.data));
-    // })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
-  }, []);
+  });
 
   if (loading) {
     return (
