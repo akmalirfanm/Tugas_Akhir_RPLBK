@@ -20,7 +20,11 @@
   display: grid;
   grid: auto / auto auto auto auto;
   grid-gap: 3rem 0.75rem;
+  /* margin-top: 1rem;
   padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-gap: 2rem 0.75rem; */
 }
 
 .items-grid-container {

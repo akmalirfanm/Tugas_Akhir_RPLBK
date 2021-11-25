@@ -21,13 +21,13 @@ export default function Locations(props) {
       });
   });
 
-  if (loading) {
-    return (
-      <div className="loading">
-        <SpinnerCircular color="#2769be" />
-      </div>
-    );
-  }
+  // if (loading) {
+  //   return (
+  //     <div className="loading">
+  //       <SpinnerCircular color="#2769be" />
+  //     </div>
+  //   );
+  // }
 
   return (
     <div className="loc-grid-container" id="location">
