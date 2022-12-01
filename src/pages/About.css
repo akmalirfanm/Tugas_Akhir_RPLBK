@@ -8,9 +8,9 @@
 }
 
 /* .about h1 {
-  margin-bottom: 0.5rem;
-  color: orange;
-} */
+    margin-bottom: 0.5rem;
+    color: orange;
+  } */
 
 .about h2 {
   margin-bottom: 0.5rem;
@@ -37,12 +37,4 @@
 
 .about a:hover {
   color: orange;
-}
-
-body {
-  background-image: url("./zeldainfo2.jfif");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }

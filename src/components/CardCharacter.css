@@ -1,0 +1,13 @@
+.items-box {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.items-name {
+  color: var(--blue-dark);
+  font-weight: 600;
+  text-transform: capitalize;
+}

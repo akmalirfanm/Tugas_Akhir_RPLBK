@@ -1,3 +1,8 @@
+.title-detail {
+  text-align: center;
+  padding: 16px;
+}
+
 .chara {
   margin: 2rem auto;
   /* font-size: calc(10px + 2vmin); */

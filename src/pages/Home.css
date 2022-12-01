@@ -1,15 +1,5 @@
-/* .app-logo {
-  pointer-events: none;
-} */
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .app-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
 .home {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +8,7 @@
   font-size: calc(10px + 2vmin);
   color: var(--blue-light);
   text-align: center;
-  background-image: url("../rick2.png");
+  background-image: url('../images/rick2.png');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -38,12 +28,20 @@
   text-align: center;
 }
 
+.menu-box-dark {
+  background: var(--blue-dark);
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
 .app-link {
   color: white;
 }
 
 .app-link:hover {
   color: var(--gray);
+  cursor: pointer;
 }
 
 @keyframes App-logo-spin {

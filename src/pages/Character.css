@@ -1,0 +1,26 @@
+#items h1 {
+  margin-bottom: 16px;
+}
+
+.button-add {
+  margin-bottom: 16px;
+}
+
+.items-container {
+  display: grid;
+  grid: auto / auto auto auto auto;
+  grid-gap: 3rem 0.75rem;
+}
+
+.items-container-no-gap {
+  display: grid;
+  grid: auto / auto auto auto auto;
+}
+
+.items-grid-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  margin-bottom: 100px;
+}

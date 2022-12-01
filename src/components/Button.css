@@ -1,0 +1,25 @@
+.button {
+  padding: 8px 12px;
+  color: aliceblue;
+  background-color: var(--blue-light);
+  border: none;
+  border-radius: 4px;
+}
+
+.button-dark {
+  padding: 8px 12px;
+  color: aliceblue;
+  background-color: var(--blue-dark);
+  border: none;
+  border-radius: 4px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--blue-dark);
+}
+
+.button-dark:hover {
+  cursor: pointer;
+  background-color: var(--blue-light);
+}

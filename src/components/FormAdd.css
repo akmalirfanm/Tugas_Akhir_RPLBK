@@ -1,0 +1,28 @@
+.form-add {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.container-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.container-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-add input {
+  width: 80%;
+  padding: 6px 8px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .form-add {
+    width: 75%;
+  }
+}

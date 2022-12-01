@@ -1,32 +1,27 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Homepage from "./components/Homepage";
-import Locations from "./components/Locations";
-import BottomNav from "./components/BottomNav";
-import Items from "./components/Characters";
-import About from "./components/About";
-import Location from "./components/Location";
-import Item from "./components/Character";
-import { createBrowserHistory } from "history";
-
-const history = createBrowserHistory();
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Items from './pages/Character';
+import Home from './pages/Home';
+import { Location as Locations } from './pages/Location';
+import About from './pages/About';
+import Search from './pages/Search';
+import DetailLocation from './pages/DetailLocation';
+import DetailCharacter from './pages/DetailCharacter';
+import AddCharacter from './pages/AddCharacter';
 
 function App() {
   return (
-    <Router history={history}>
-      <div className="app">
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/locations" element={<Locations />} />
-          <Route path="/locations/:locationId" element={<Location />} />
-          <Route path="/characters" element={<Items />} />
-          <Route path="/characters/:sembarang" element={<Item />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-        <footer>
-          <BottomNav />
-        </footer>
-      </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/search" element={<Search />} />
+        <Route path="/add-character" element={<AddCharacter />} />
+        <Route path="/locations" element={<Locations />} />
+        <Route path="/detail-location/:id" element={<DetailLocation />} />
+        <Route path="/characters" element={<Items />} />
+        <Route path="/detail-character/:id" element={<DetailCharacter />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </Router>
   );
 }
