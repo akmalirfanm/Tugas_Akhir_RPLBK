@@ -7,6 +7,10 @@
   color: white;
 }
 
+.label-location {
+  padding: 16px 0;
+}
+
 .loc-container {
   margin-top: 1rem;
   padding-bottom: 5rem;

@@ -1,9 +1,9 @@
-import './Location.css';
-import { useEffect, useState } from 'react';
-import Layout from '../components/Layout';
-import { Link } from 'react-router-dom';
-import axios from 'axios';
-import { SpinnerCircular } from 'spinners-react';
+import "./Location.css";
+import { useEffect, useState } from "react";
+import Layout from "../components/Layout";
+import { Link } from "react-router-dom";
+import axios from "axios";
+import { SpinnerCircular } from "spinners-react";
 
 export function Location() {
   const [location, setLocation] = useState([]);
@@ -12,7 +12,7 @@ export function Location() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get('https://rickandmortyapi.com/api/location')
+      .get("https://rickandmortyapi.com/api/location")
       .then((res) => {
         setLocation(res.data.results);
         setLoading(false);
@@ -31,7 +31,7 @@ export function Location() {
         </div>
       )}
       <div className="loc-grid-container" id="location">
-        <h1>Rick n Morty Locations</h1>
+        <h1 className="label-location">Rick n Morty Locations</h1>
         <div className="loc-container">
           {location.map((l) => (
             <div key={l.id} className="loc-box">

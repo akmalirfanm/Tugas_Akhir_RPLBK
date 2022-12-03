@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom';
-import './CardCharacter.css';
+import { Link } from "react-router-dom";
+import "./CardCharacter.css";
 
 export default function CardCharacter({ item }) {
   return (
     <div key={item.id} className="items-box">
       <Link to={`/detail-character/${item.id}`}>
-        <img src={item.image} alt={item.name} />
+        <img src={item.image} alt={item.name} className="image-character" />
       </Link>
       <Link to={`/detail-character/${item.id}`} className="link items-name">
         {item.name}
